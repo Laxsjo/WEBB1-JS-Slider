@@ -1,15 +1,28 @@
 
 .imageCarousel {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    overflow: hidden;
+
     position: relative;
 
     width: 100vw;
+    max-height: 60rem;
 }
 
 .imageItem {
+    position: relative;
+    /* top: 50%; */
+
     width: 100%;
     height: auto;
 
     user-select: none;
+
+    /* transform: translateY(-50%); */
 }
 
 .imageItem.hidden {
