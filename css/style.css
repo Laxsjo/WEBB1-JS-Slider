@@ -1,0 +1,43 @@
+
+.imageCarousel {
+    position: relative;
+
+    width: 100vw;
+}
+
+.imageItem {
+    width: 100%;
+    height: auto;
+
+    user-select: none;
+}
+
+.imageItem.hidden {
+    display: none;
+}
+
+.carouselButton {
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+
+    /* height: 1rem; */
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 800;
+
+    /* border: none; */
+    border-radius: 5px;
+    
+    background: transparent;
+
+    transform: translateY(-50%);
+}
+.carouselButton.previous {
+    left: 0.5rem;
+}
+.carouselButton.next {
+    right: 0.5rem;    
+}
