@@ -1,16 +1,22 @@
 
+body {
+    color: hsl(0, 0%, 93%);
+
+    background: hsl(0, 0%, 12%);
+}
+
 .imageCarousel {
     display: flex;
     flex-direction: column;
 
     justify-content: center;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     position: relative;
 
     width: 100vw;
-    max-height: 60rem;
+    height: 60vw;
 }
 
 .imageItem {
@@ -18,7 +24,8 @@
     /* top: 50%; */
 
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
 
     user-select: none;
 
@@ -36,7 +43,8 @@
     top: 50%;
 
     /* height: 1rem; */
-    color: white;
+    color: hsl(0, 0%, 96%);
+    background: hsl(0, 0%, 20%);
 
     font-size: 3rem;
     font-weight: 800;
@@ -44,7 +52,6 @@
     /* border: none; */
     border-radius: 5px;
     
-    background: transparent;
 
     transform: translateY(-50%);
 }
